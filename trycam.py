@@ -31,6 +31,8 @@ while(True):
 		id_, acc = recog.predict(face_gray)
 		print(acc)
 		if acc>=50:
+			print(lbls[id_])
+		if acc>=80:
 			font = cv2.FONT_HERSHEY_SIMPLEX
 			name = lbls[id_]
 			color = (0,0,0)
